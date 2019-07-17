@@ -44,14 +44,14 @@ const styles = theme => ({
     borderLeft: `1px solid ${theme.palette.grey['A100']}`,
     marginLeft: 32,
     paddingLeft: 24,
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       paddingTop: '1.5em'
     }
   },
   tagline: {
     display: 'inline-block',
     marginLeft: 10,
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       paddingTop: '0.8em'
     }
   },
@@ -131,17 +131,12 @@ class Topbar extends Component {
               <div className={classes.inline}>
                 <Typography variant="h6" color="inherit" noWrap>
                   <Link to='/' className={classes.link}>
-                    <span className={classes.tagline}>Material Sense</span>
+                    <span className={classes.tagline}>Materials Sense</span>
                   </Link>
                 </Typography>
               </div>
               {!this.props.noTabs && (
                 <React.Fragment>
-                  <div className={classes.productLogo}>
-                    <Typography>
-                      A material UI Template
-                        </Typography>
-                  </div>
                   <div className={classes.iconContainer}>
                     <IconButton onClick={this.mobileMenuOpen} className={classes.iconButton} color="inherit" aria-label="Menu">
                       <MenuIcon />

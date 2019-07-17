@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles'
 import './App.css';
+import 'styles/build/index.css';
 import Container from './app/Container'
 import { blue, indigo } from '@material-ui/core/colors'
 

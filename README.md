@@ -1,4 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## About
+Template for starting a LivePerson widget quickly. Built with MaterialUI, MaterialSense and Create-react-app.
+
+Use this as an example or starting point for developing widgets.
+
+
+1) Run `npm start` to begin https dev environment. 
+2) You'll need to edit your hosts file to create a redirect since LE disallows localhost URLs for widgets.
+3) Add the widget in LE. ex: `www.testingdomain.com:3000`
+4) Start developing, widet will hot reload
+
+### Hosts file Windows
+    Windows:C:\Windows\System32\drivers\etc
+    add `127.0.0.1	www.testingdomain.com` 
 
 ## Available Scripts
 

@@ -14,7 +14,6 @@ function Requests() {
 
   useEffect(() => {
     const fetchData = async () => {
-      console.log('inside ', loading)
       setLoading(true);
       setSuccess(false)
       try {

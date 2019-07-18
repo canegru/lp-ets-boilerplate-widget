@@ -1,5 +1,6 @@
-import Dashboard from 'app/pages/Dashboard'
-import Example from 'app/pages/Example'
+import Dashboard from 'app/pages/Dashboard';
+import Graph from 'app/pages/Graph';
+import List from 'app/pages/List';
 
 const routerConfig = [
   {
@@ -8,8 +9,13 @@ const routerConfig = [
     exact: true
   },
   {
-    path: '/dashboard',
-    component: Example,
+    path: '/graph',
+    component: Graph,
+    exact: true
+  },
+  {
+    path: '/list',
+    component: List,
     exact: true
   }
 

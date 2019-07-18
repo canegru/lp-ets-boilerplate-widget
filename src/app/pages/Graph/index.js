@@ -5,21 +5,18 @@ import { Icon, Input, Paper, Tabs, Tab, Fab, Typography, Button, Card, CardConte
 import EtsAnimate from 'app/@ets/components/EtsAnimate';
 
 
-function Dashboard() {
-
-
+function Graph() {
   return (
     <React.Fragment>
       <div className="p-10">
         <EtsAnimate animation="transition.slideUpIn" delay={300}>
-          <Paper className="flex flex-col items-center justify-center p-32 shadow-0">
+          <Paper className="flex-grow items-center justify-center p-32 shadow-0">
 
           </Paper>
         </EtsAnimate>
       </div>
     </React.Fragment>
   )
-
 }
 
-export default withRouter(Dashboard);
+export default withRouter(Graph);

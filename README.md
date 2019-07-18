@@ -1,6 +1,6 @@
 
 ## About
-Template for starting a LivePerson widget quickly. Built with MaterialUI, MaterialSense and Create-react-app.
+Template for starting a LivePerson widget quickly. Built with MaterialUI, Create-react-app, TailwindCss, PostCSS and Velocity.
 
 Use this as an example or starting point for developing widgets.
 

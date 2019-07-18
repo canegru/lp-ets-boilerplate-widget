@@ -1,11 +1,15 @@
 const Menu = [
   {
-    label: "Home",
+    label: "Dashboard",
     pathname: "/"
   },
   {
-    label: "Dashboard",
-    pathname: "/dashboard"
+    label: "Graph",
+    pathname: "/graph"
+  },
+  {
+    label: "List",
+    pathname: "/list"
   }
 ];
 

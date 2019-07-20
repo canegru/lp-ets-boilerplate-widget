@@ -25,13 +25,11 @@ function Layout() {
       <CssBaseline />
       <div className={classes.root}>
         <NavigationBar />
-
         <div>
           <Switch>
             {routerConfig.map(route => <Route key={route.path} {...route} />)}
           </Switch>
         </div>
-
       </div>
     </HashRouter>
   )

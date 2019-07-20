@@ -1,12 +1,11 @@
 
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles'
-import './App.css';
 import 'styles/build/index.css';
-import Container from './app/Container'
-import { blue, indigo } from '@material-ui/core/colors'
-
+import Container from './app/Container';
+import { blue, indigo } from '@material-ui/core/colors';
+import AgentSdk from './sdk/AgentSdk';
 const theme = createMuiTheme({
   palette: {
     secondary: {
@@ -26,16 +25,19 @@ const theme = createMuiTheme({
 });
 
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <ThemeProvider theme={theme}>
-          <Container />
-        </ThemeProvider>
-      </div>
-    );
-  }
+function App() {
+
+  useEffect(() => {
+    AgentSdk.init();
+  }, [])
+
+  return (
+    <div>
+      <ThemeProvider theme={theme}>
+        <Container />
+      </ThemeProvider>
+    </div>
+  );
 }
 
 export default App;

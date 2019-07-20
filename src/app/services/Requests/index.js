@@ -9,10 +9,11 @@ function Requests() {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const [config, setConfig] = useState({});
-  const loadingTimer = useRef();
-  const successTimer = useRef();
+
 
   useEffect(() => {
+    let loadingTimer = null;
+    let successTimer = null;
     const fetchData = async () => {
       setLoading(true);
       setSuccess(false)
@@ -32,10 +33,10 @@ function Requests() {
       } finally {
         const animationDelay = get(config, 'delay', 0);
         // wait animation delay before removing loading state
-        loadingTimer.current = setTimeout(() => {
+        loadingTimer = setTimeout(() => {
           
           setSuccess(true);
-          loadingTimer.current = setTimeout(() => { 
+          loadingTimer = setTimeout(() => { 
             setSuccess(false);
             setLoading(false);
           }, 250)
@@ -46,8 +47,8 @@ function Requests() {
     fetchData();
     // Clear
     return () => {
-      clearTimeout(loadingTimer.current);
-      clearTimeout(successTimer.current);
+      clearTimeout(loadingTimer);
+      clearTimeout(successTimer);
     };
   }, [config]);
 

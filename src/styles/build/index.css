@@ -2,6 +2,18 @@
   box-shadow: none !important;
 }
 
+.ets-header {
+  background-image: linear-gradient(to right top, #393b3d, #3c3d3f, #3e3f41, #414142, #434344);
+  min-height: 160px;
+  margin-bottom: -120px;
+}
+
+/* Theme Overrides */
+
+.MuiPaper-root {
+  transition: all 0.5s linear 0s;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document

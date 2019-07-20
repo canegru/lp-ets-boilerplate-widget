@@ -8,12 +8,14 @@ import TableWidget from './widget/Table';
 function List() {
   return (
     <React.Fragment>
+      <div className="ets-header">
+      </div>
       <div className="p-10">
-        <EtsAnimate animation="transition.slideUpIn" delay={300}>
-          <Paper className="flex-grow items-center justify-center p-10 shadow-0">
+        
+          
             <TableWidget />
-          </Paper>
-        </EtsAnimate>
+     
+        
       </div>
     </React.Fragment>
   )
